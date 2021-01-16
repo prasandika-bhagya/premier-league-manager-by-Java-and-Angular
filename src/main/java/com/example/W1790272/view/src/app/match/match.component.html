@@ -1,0 +1,65 @@
+<h1>Match List</h1>
+<!--div alighning doc-->
+
+<div align="center">
+<!--form of page-->
+
+<!--form of page - pl-->
+  <input type="text" id="searchName" [(ngModel)]="matchSearch"><br>
+<br>
+<!--form of page - pl-->
+  <button class="subButton" type="button" (click)="ngOnSearchMatch()"  value="Search">Search</button>
+<!--breaking -->
+    <br>
+    <!--breaking -->
+
+<!--closing form -->
+<div>
+<br>
+<!--table openinig -->
+<table class="tableForCwOfPL">
+<thead>
+
+<!--table raw -->
+  <tr>
+  <!--table raw -->
+  <!--table head - tags -->
+    <th>Club One</th>
+    <!--table head - tags -->
+    <th>Club One Score</th>
+    <!--table head - tags -->
+    <th>Club Two</th>
+    <!--table head - tags -->
+    <th>Club Two Score</th>
+    <!--table head - tags -->
+    <th>Date</th>
+    <!--table head - tags -->
+  </tr>
+  <!--table head - tags -->
+</thead>
+<!--table head - tags close -->
+
+<!--table body -->
+<tbody>
+
+<!--table inserting data -->
+  <tr *ngFor="let listOfMatch of matchList">
+  <!--table inserting data -->
+    <td>{{listOfMatch.clubOneNameForTheMatchTable}}</td>
+    <!--table inserting data -->
+    <td>{{listOfMatch.scoreOfTheClubOneForTheMatchTable}}</td>
+    <!--table inserting data -->
+    <td>{{listOfMatch.clubTwoNameForTheMatchTable}}</td>
+    <!--table inserting data -->
+    <!--table inserting data -->
+    <td>{{listOfMatch.scoreOfTheClubTwoForTheMatchTable}}</td>
+    <!--table inserting data -->
+    <td>{{listOfMatch.dateForTheMatch}}</td>
+  </tr>
+
+  <!--table inserting data - ending-->
+</tbody>
+
+<!--table ending of current page -->
+</table>
+

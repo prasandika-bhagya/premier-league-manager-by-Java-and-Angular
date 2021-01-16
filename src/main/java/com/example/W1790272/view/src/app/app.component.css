@@ -1,0 +1,43 @@
+body{
+
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+
+
+}
+
+
+
+.header-premeir-lg-cw, .footer-premeir-lg-cw{
+  width: 100%;
+  position: fixed;
+  background: #0a3f59;
+  padding: 10px 0;
+  color: #fff;
+}
+.header-premeir-lg-cw{
+  top: 0;
+  left: 0;
+}
+.footer-premeir-lg-cw{
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+nav a{
+
+
+  color: #fff;
+  text-decoration: none;
+
+  padding: 10px 25px;
+  display: inline-block;
+
+}

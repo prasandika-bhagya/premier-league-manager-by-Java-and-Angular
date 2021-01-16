@@ -1,0 +1,105 @@
+<h1>Club List</h1
+>
+
+<!--id for div in leahue-->
+<div id="outer">
+
+
+<!--id for div in leahue-->
+  <div class="inLineForPLPOFTHIS"><button type="Sort By Point" class="buttonForPL" (click)="ngOnInit()" >Sort By Point</button></div>
+ &nbsp;
+
+<!--space between button -->
+<!--button in same line-->
+ <div class="inLineForPLPOFTHIS"><button type="Sort By Goal" class="buttonForPL" (click)="sortByGoals()">Sort By Goal</button></div>
+  &nbsp;
+<!--space between button -->
+  <!--button in same line-->
+  <div class="inLineForPLPOFTHIS"><button type="Sort By Point" class="buttonForPL" (click)="sortByWin()" >Sort By Wins</button></div>
+  &nbsp;
+<!--space between button -->
+  <!--button in same line-->
+  <div class="inLineForPLPOFTHIS"><button type="Sort By Goal" class="buttonForPL" (click)="sortByGenerate()" >Generate Match</button></div>
+</div>
+
+<!--break-->
+<br>
+<!--break-->
+<!--table creating-->
+<table class="tableForCwOfPL">
+<!--table creating - head-->
+<thead>
+
+<!--table raw-->
+  <tr>
+  <!--table raw-->
+    <th>Name</th>
+
+    <!--head of table-->
+    <th>Matches</th>
+
+    <!--head of table-->
+      <th>Wins</th>
+
+    <!--head of table-->
+      <th>Draws</th>
+
+    <!--head of table-->
+        <th>Defeats</th>
+
+    <!--head of table-->
+         <th>G Scored</th>
+
+    <!--head of table-->
+    <th>G Received</th>
+
+    <!--head of table-->
+        <th>G Difference</th>
+
+    <!--head of table-->
+    <th>Points</th>
+
+    <!--head of table-->
+
+  </tr>
+</thead>
+
+
+    <!--body of table-->
+<tbody>
+
+
+    <!--raw of table-->
+  <tr *ngFor="let listOfClubs of clubList">
+
+  <!--raw of table - data-->
+    <td>{{listOfClubs.nameOfSportsClub}}</td>
+
+    <!--raw of table - data-->
+       <td>{{listOfClubs.numberOfMatchesWhichPlayed}}</td>
+       <!--raw of table - data-->
+    <td>{{listOfClubs.countedNumberOfWins}}</td>
+    <!--raw of table - data-->
+        <td>{{listOfClubs.countedNumberOfDraws}}</td>
+        <!--raw of table - data-->
+        <!--raw of table - data-->
+            <td>{{listOfClubs.countedNumberOfDefeats}}</td>
+            <!--raw of table - data-->
+            <td>{{listOfClubs.numberOfTheGoalsScored}}</td>
+
+            <!--raw of table - data-->
+    <td>{{listOfClubs.goalCountReceived}}</td>
+
+    <!--raw of table - data-->
+        <td>{{listOfClubs.numberOfGoalDifferenceRecorded}}</td>
+
+        <!--raw of table - data-->
+    <td>{{listOfClubs.numberOfPointsAchieved}}</td>
+
+    <!--raw of table - data-->
+    <!--end of table-->
+  </tr>
+</tbody>
+
+<!--end table-->
+</table>
